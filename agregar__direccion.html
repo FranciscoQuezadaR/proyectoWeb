@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraLu Tech</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="preload" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+
+    <!-- FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/9de6329270.js" crossorigin="anonymous"></script>
+
+    <link rel="preload" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navegacion">
+            <div class="logo"> <!-- CLASE LOGO NO EXISTE EN CSS -->
+                <a href="index.html"><img src="img/energia-nuclear.png" alt="logo" title="logo"></a>
+            </div>
+            <label for="check" class="checkbtn">
+                <img class="nav__img" src="img/lista.png" alt="">
+            </label>
+            <input type="nav__input" id="check">
+            <nav class="navegacion-principal">
+                <a href="index.html" class="nav-item">Inicio</a>
+                <a href="about.html" class="nav-item">Nosotros</a>
+                <a href="catalogo.html" class="nav-item">Catalogo</a>
+                <a href="contacto.html" class="nav-item">Contacto</a>
+            </nav>
+            <div class="cuenta-dv">
+                <div class="desplegable">
+                    <button class="boton-inicio"><img class="cuenta" src="img/cuenta.png" alt=""></button>
+                    <div class="links-boton">
+                        <a href="iniciosesion.html" >Inicia Sesion</a>
+                        <a href="registro.html" >Registrate</a>
+                    </div>    
+                </div>
+                <div>
+                    <a href=""><img class="cuenta" src="img/carrito-de-compras.png" alt=""></a>
+                </div>
+            </div>
+            <div class="buscador">
+                <label for="buscador">
+                    <img class="cuenta buscador__icon" src="img/buscar.png" alt="">
+                </label>
+                <input class="input_buscador_check" type="checkbox" id="buscador">
+                <div class="div_buscador">
+                    <div class="linea__blanca"></div>
+                    <input class="input_buscador" type="text">
+                    <div class="icon_buscador_div">
+                        <a href="#"><img class="cuenta buscador__icon__input" src="img/buscar1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="post__header post__header__producto">
+        </section>
+        <section class="comprar">
+            <div class="direccion">
+                <form class="formulario">
+                    <fieldset>
+                        <div class="contacto">
+                            <div class="direccion__titulo">
+                                <legend>Direccion</legend>
+                            </div>
+                            <div class="campo">
+                                <label for="pais">Pais de residencia</label><br/>
+                                <select class="seleccionar__pais" name="pais" id="pais">
+                                    <option value="mexico">Mexico</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="nombre">Nombre completo (nombres y apellidos)</label>
+                                <input type="text" name="nombre" id="nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="calle_numero">Calle y número</label>
+                                <input type="text" name="calle_numero" id="calle_numero" placeholder="Calle, numero">
+                                <input type="text" name="calle_numero" id="calle_numero" placeholder="Apartamento, suite, unidad, edificio, piso, etc.">
+                            </div>
+                            <div class="campo">
+                                <label for="ciudad">Ciudad</label>
+                                <input type="text" name="ciudad">
+                            </div>
+                            <div class="campo">
+                                <label for="estado_provincia_region">Estado/Provincia/Región</label>
+                                <input type="text" name="estado_provincia_region" id="estado_provincia_region">
+                            </div>
+                            <div class="campo">
+                                <label for="cp">Codigo postal</label>
+                                <input type="text" name="cp" id="cp">
+                            </div>
+                            <div class="campo">
+                                <label for="tel">Telefono</label>
+                                <input type="tel" name="tel" id="tel">
+                            </div>
+                            <input class="boton-reg" type="button" value="agregar" name="" id="">
+                        </div>  
+                    </fieldset>
+                </form>
+            </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="pree__footer">
+            <img class="paypal" src="img/footer/paypal.png" alt="">
+            <img class="tarjetas" src="img/footer/visa.png" alt="">
+            <img class="dhl" src="img/footer/dhl.png" alt="">
+        </div>
+        <a href="#"><img src="img/footer/instagram.png" alt="instagram" title="instagram"></a>
+        <a href="#"><img src="img/footer/twitter.png" alt="twitter" title="twitter"></a>
+        <a href="#"><img src="img/footer/github.png" alt="GitHub" title="GitHub"></a><br>
+        <a class="texto-footer" href="">Aviso legal</a>
+        <a class="texto-footer margen" href="">Promociones</a>
+        <a class="texto-footer margen" href="">Devoluciones</a><br><br>
+        <small class="texto-footer">Todos los derechos reservados &#169<br>Autores:<br>Luis Enrique Batres Martinez<br>Francisco
+        Quezada Rivera</small>
+        <!-- developer.facebook.com -->
+    </footer>
+</body>
